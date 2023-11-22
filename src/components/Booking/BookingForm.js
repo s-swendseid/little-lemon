@@ -19,7 +19,7 @@ const BookingForm = (props) => {
   return (
     <header>
       <section>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} for="fieldset">
           <fieldset>
             {/* Date Selection */}
             <div>
@@ -39,6 +39,7 @@ const BookingForm = (props) => {
               <select
                 id="book-time"
                 value={times}
+                required
                 onChange={(e) => setTimes(e.target.value)}
               >
                 <option value="">Select Time</option>

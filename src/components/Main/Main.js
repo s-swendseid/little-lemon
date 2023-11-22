@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
-import Booking from "../Booking/Booking";
+import Booking from "../Booking/BookingPage";
 import ConfirmedBooking from "../Booking/ConfirmedBooking";
 
 const Main = () => {
@@ -34,8 +34,8 @@ const Main = () => {
     return true;
   };
 
-  const initialState = { availableTimes: fetchAPI(new Date()) };
-  const [state, dispatch] = useReducer(updateTimes, initialState);
+  const initialTimes = { availableTimes: fetchAPI(new Date()) };
+  const [state, dispatch] = useReducer(updateTimes, initialTimes);
 
   function updateTimes(state, date) {
     return { availableTimes: fetchAPI(new Date()) };
