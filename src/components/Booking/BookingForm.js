@@ -65,7 +65,7 @@ const BookingForm = (props) => {
 
             {/* Occastion occasion */}
             <div>
-              <label htmlFor="book-occasion">Cccasion</label>
+              <label htmlFor="book-occasion">Occasion</label>
               <select
                 id="book-occasion"
                 key={occasion}

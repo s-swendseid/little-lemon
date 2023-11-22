@@ -3,10 +3,11 @@ footer section {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  background-color: #EDEFEE;
 }
 
 .company-info img {
-  margin-top: 12px;
+  margin: 20px 0;
   cursor: pointer;
   width: 200px;
 }

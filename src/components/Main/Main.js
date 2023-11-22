@@ -19,10 +19,10 @@ const Main = () => {
     let random = seedRandom(date.getDate());
 
     for (let i = 17; i <= 23; i++) {
-      if (random() < 0.5) {
+      if (random() < 0.2) {
         result.push(i + ":00");
       } 
-      if (random() > 0.5) {
+      if (random() > 0.2) {
         result.push(i + ":30");
       }
     }
